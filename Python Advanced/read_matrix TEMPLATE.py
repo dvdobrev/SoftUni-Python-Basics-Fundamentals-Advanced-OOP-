@@ -5,7 +5,7 @@ def read_matrix():
     for row in range(rows):
         line = input()  # може да е и със .SPLIT
         sub_matrix = [line[el] for el in range(len(line))]
-        #sub_matrix = list(map(int, line)) # ако ми трябват да са интиджер
+        #sub_matrix = list(map(int, line))  # ако ми трябват да са интиджер
         matrix.append(sub_matrix)
 
     return matrix
@@ -18,7 +18,7 @@ def read_input():
     rows_count, columns_count = [int(x) for x in input().split(" ")]
     matrix =[]
     for _ in range(rows_count):
-        matrix.append(list(input().split())) # може да е и без .SPLIT
+        matrix.append(list(input().split()))  # може да е и без .SPLIT
 
     return matrix
 
@@ -28,12 +28,12 @@ print(*matrix, sep="\n")
 
 
 
-def is_index_valid(value, max_value): # IS INDEX VALID
+def is_index_valid(value, max_value):  # IS INDEX VALID
     return 0 <= value < max_value
 
 
 
-def find_the_player(matrix): # Find the thing we search
+def find_the_player(matrix):  # Find the thing we search
     for y, row in enumerate(matrix):
         for x, char in enumerate(row):
             if PLAYER == char:
