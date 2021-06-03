@@ -9,10 +9,10 @@ def read_matrix():
     return matrix
 
 
-def is_index_valid(value, max_value, new_cordinates):  # IS INDEX VALID
-    if new_cordinates not in bomb_cordinates and 0 <= value < max_value:
-        return True
+# ot tuk
 
+def is_index_valid(value, max_value, new_cordinates):  # IS INDEX VALID
+    return 0 <= value < max_value
 
 def bomb_explode(bomb, matrix, bomb_value):
     row, col = bomb
