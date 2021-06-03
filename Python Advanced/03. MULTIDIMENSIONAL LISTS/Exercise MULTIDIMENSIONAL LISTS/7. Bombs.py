@@ -9,10 +9,9 @@ def read_matrix():
     return matrix
 
 
-# ot tuk
-
 def is_index_valid(value, max_value, new_cordinates):  # IS INDEX VALID
     return 0 <= value < max_value
+
 
 def bomb_explode(bomb, matrix, bomb_value):
     row, col = bomb
@@ -54,9 +53,9 @@ def find_active_cells(matrix):
 n = int(input())
 matrix = read_matrix()
 
-bomb_cordinates = [tuple(int(l) for l in el if l.isnumeric()) for el in input().split()]
+bomb_coordinates = [tuple(int(l) for l in el if l.isnumeric()) for el in input().split()]
 
-for bomb in bomb_cordinates:
+for bomb in bomb_coordinates:
     row, col = bomb
     bomb_value = matrix[row][col]
     new_matrix_values = bomb_explode(bomb, matrix, bomb_value)
