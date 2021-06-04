@@ -37,6 +37,8 @@ def bomb_explode(bomb, matrix, bomb_value):
             if not current_cell_value <= 0:
                 matrix[next_row_index][next_col_index] -= bomb_value  # change the value on cell
 
+    return matrix
+
 
 def find_active_cells(matrix):
     cells_count = 0
@@ -58,8 +60,9 @@ bomb_coordinates = [tuple(int(l) for l in el if l.isnumeric()) for el in input()
 for bomb in bomb_coordinates:
     row, col = bomb
     bomb_value = matrix[row][col]
-    new_matrix_values = bomb_explode(bomb, matrix, bomb_value)
-    matrix[row][col] = 0  # after the bomb exploed
+    if bomb_value > 0:
+        new_matrix_values = bomb_explode(bomb, matrix, bomb_value)
+        matrix[row][col] = 0  # after the bomb exploed
 
 active_cells, cell_sum = find_active_cells(matrix)
 
