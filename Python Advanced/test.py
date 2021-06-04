@@ -1,2 +1,4 @@
-a = [tuple(int(l) for l in el if l.isnumeric()) for el in input().split()]
-print(a)
+# a = [1, 2, 3, 4]
+#
+# b = a[:-2]
+# print(b)
