@@ -34,10 +34,10 @@ def is_index_valid(value, max_value):  # IS INDEX VALID
 
 
 def find_the_player(matrix):  # Find the thing we search
-    for y, row in enumerate(matrix):
-        for x, char in enumerate(row):
+    for row_index, row in enumerate(matrix):
+        for col_index, char in enumerate(row):
             if PLAYER == char:
-                return y, x
+                return row_index, col_index
 
 
 def get_next_move(row, col, dir):  # DIRECTIONS FUNKTION
