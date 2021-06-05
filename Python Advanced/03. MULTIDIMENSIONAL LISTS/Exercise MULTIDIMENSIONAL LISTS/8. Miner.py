@@ -9,7 +9,7 @@ def read_matrix(size):
     return matrix
 
 
-def find_the_start(matrix):  # Find the thing we search
+def find_the_start(matrix):  # Find the thing we are searching for
     for y, row in enumerate(matrix):
         for x, char in enumerate(row):
             if char == "s":
