@@ -1,3 +1,24 @@
+def read_matrix(n):  # Finde PLAYER AND Read, Matrix. !!! Return all - Matrix, player_row, player_col !!!!!
+    matrix = []
+    row_index = None
+    col_index = None
+
+    for row in range(n):
+        current_row = list(input())
+        if "P" in current_row:
+            row_index = row
+            col_index = current_row.index("P")
+
+        matrix.append(current_row)
+
+
+    return (matrix, row_index, col_index)
+
+matrix, row_index, col_index = read_matrix(n)
+print(*matrix, sep="\n")
+
+-----------------------------------------------------------
+
 def read_matrix():
     rows, cols = [int(x) for x in input().split()]
     matrix = []
@@ -13,6 +34,7 @@ def read_matrix():
 matrix = read_matrix()
 print(*matrix, sep="\n")
 
+-----------------------------------------------------------------
 
 def read_input():
     rows_count, columns_count = [int(x) for x in input().split(" ")]
@@ -23,15 +45,14 @@ def read_input():
     return matrix
 
 matrix = read_input()
-
 print(*matrix, sep="\n")
 
-
+---------------------------------------------------------------------------
 
 def is_index_valid(value, max_value):  # IS INDEX VALID
     return 0 <= value < max_value
 
-
+------------------------------------------------------------------------
 
 def find_the_player(matrix):  # Find the thing we search
     for row_index, row in enumerate(matrix):
@@ -39,6 +60,7 @@ def find_the_player(matrix):  # Find the thing we search
             if PLAYER == char:
                 return row_index, col_index
 
+--------------------------------------------------------------------------------
 
 def get_next_move(row, col, dir):  # DIRECTIONS FUNKTION
     dir_deltas = {
@@ -63,3 +85,5 @@ directions = [
             (+1, 0),
             (+1, -1),
               ]
+
+---------------------------------------------------------------------------
