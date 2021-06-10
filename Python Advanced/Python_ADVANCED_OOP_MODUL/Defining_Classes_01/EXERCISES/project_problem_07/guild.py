@@ -1,4 +1,4 @@
-from Python_ADVANCED_OOP_MODUL.Defining_Classes_01.EXERCISES.project_problem_07.player import Player
+from Python_ADVANCED_OOP_MODUL.Defining_Classes_01.EXERCISES.project_Guild_system_07.player import Player
 
 """
 When you submit in Judge, you have to:
