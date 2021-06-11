@@ -1,7 +1,7 @@
 from Python_ADVANCED_OOP_MODUL.Defining_Classes_01.EXERCISES.project_TODO_list_09.task import Task
 
 """
-Pay attention to correct import path!!!!
+Pay attention to import the correct path!!!!
 """
 
 class Section:
