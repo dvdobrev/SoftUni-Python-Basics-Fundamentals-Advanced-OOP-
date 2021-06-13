@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 
+
 def get_report_for_extensions(files):
     report = {}
     for file in files:
@@ -9,6 +10,7 @@ def get_report_for_extensions(files):
             report[extension] = []
         report[extension].append(file_name)
     return report
+
 
 dir_content = os.listdir()
 
