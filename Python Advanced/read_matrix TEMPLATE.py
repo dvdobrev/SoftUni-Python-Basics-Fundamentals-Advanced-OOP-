@@ -87,3 +87,6 @@ directions = [
               ]
 
 ---------------------------------------------------------------------------
+FORMATING
+b = ', '.join([el for el in test])
+a = ', '.join([f"{k}: {v}" for k, v in self.ingredients.items()])
