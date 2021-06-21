@@ -90,3 +90,8 @@ directions = [
 FORMATING
 b = ', '.join([el for el in test])
 a = ', '.join([f"{k}: {v}" for k, v in self.ingredients.items()])
+
+from collections import defaultdict
+
+a = defaultdict(lambda: 0) #   If there is not a key and value the default dict makes a such one!!!
+a["some_key"] += "some_value"
