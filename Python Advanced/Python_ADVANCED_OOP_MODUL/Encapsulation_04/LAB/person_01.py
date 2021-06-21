@@ -11,5 +11,6 @@ class Person:
 
 
 person = Person("George", 32)
+print(person.__dict__)
 print(person.get_name())
 print(person.get_age())
