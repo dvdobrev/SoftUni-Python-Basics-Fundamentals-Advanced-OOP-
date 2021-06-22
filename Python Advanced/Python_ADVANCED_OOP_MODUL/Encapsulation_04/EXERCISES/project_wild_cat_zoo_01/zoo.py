@@ -13,7 +13,7 @@ class Zoo:
             self.animals.append(animal)
             self.__budget -= price
             return f"{animal.name} the {animal.__class__.__name__} added to the zoo"
-        if len(self.animals) < self.__animal_capacity and self.__budget < price:
+        elif len(self.animals) < self.__animal_capacity and self.__budget < price:
             return f"Not enough budget"
 
         return f"Not enough space for animal"
@@ -61,11 +61,11 @@ class Zoo:
         self.__budget += amount
 
     def return_animal_data(self, name):
-        result2 = "".join('\n'.join([a.__repr__() for a in self.animals if a.__class__.__name__ == name]))
+        result2 = "".join('\n'.join([repr(a) for a in self.animals if a.__class__.__name__ == name]))
         return result2
 
     def return_worker_data(self, name):
-        result2 = "".join('\n'.join([(w.__repr__()) for w in self.workers if w.__class__.__name__ == name]))
+        result2 = "".join('\n'.join([repr(w) for w in self.workers if w.__class__.__name__ == name]))
         return result2
 
     def animals_status(self):
@@ -91,7 +91,6 @@ class Zoo:
         result += f"----- {len([w for w in self.workers if w.__class__.__name__ == 'Vet'])} Vets:\n"
         result += Zoo.return_worker_data(self, "Vet")
         return result
-
 
 # zoo = Zoo("Zootopia", 3000, 5, 8)
 #
