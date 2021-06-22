@@ -1,14 +1,6 @@
-from project.caretaker import Caretaker
-from project.cheetah import Cheetah
-from project.keeper import Keeper
-from project.lion import Lion
-from project.tiger import Tiger
-from project.vet import Vet
-
-
 class Zoo:
     def __init__(self, name, budget, animal_capacity,
-                 workers_capacity):  # check the name animLAL if in Judge is also write the same way
+                 workers_capacity):
         self.name = name
         self.animals = []
         self.workers = []
@@ -59,7 +51,7 @@ class Zoo:
 
     def tend_animals(self):
         money_for_tend = sum(
-            [a.get_needs() for a in self.animals])  # check out if you need the brackets after the method
+            [a.get_needs() for a in self.animals])
         if self.__budget >= money_for_tend:
             self.__budget -= money_for_tend
             return f"You tended all the animals. They are happy. Budget left: {self.__budget}"
