@@ -1,5 +1,5 @@
 from project.dog import Dog
-from project.animal import Animal
+from Python_ADVANCED_OOP_MODUL.Inheritance_05.EXERCISES.project_zoo_02.animal import Animal
 from project.cat import Cat
 
 animal = Animal()
