@@ -1,5 +1,5 @@
 from project.employee import Employee
-from project.person import Person
+from Python_ADVANCED_OOP_MODUL.Inheritance_05.EXERCISES.project_person_01.person import Person
 
 
 class Teacher(Person, Employee):
