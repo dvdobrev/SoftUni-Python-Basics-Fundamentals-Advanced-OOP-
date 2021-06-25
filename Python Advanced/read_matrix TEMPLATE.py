@@ -4,7 +4,7 @@ def read_matrix(n):  # Finde PLAYER AND Read, Matrix. !!! Return all - Matrix, p
     player_col_index = None
 
     for row in range(n):
-        current_row = list(input())
+        current_row = list(input().split())
         if "P" in current_row:
             player_row_index = row
             player_col_index = current_row.index("P")
