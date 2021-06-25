@@ -15,8 +15,7 @@ def stock_availability(*args):
             if produkt.isdigit():
                 sold_produkts = int(produkt)
                 if sold_produkts <= len(cupcakes):
-                    for i in range(sold_produkts):
-                        cupcakes = cupcakes[sold_produkts + 1:]
+                    cupcakes = cupcakes[sold_produkts:]
 
             else:
                 for el in produkts:
