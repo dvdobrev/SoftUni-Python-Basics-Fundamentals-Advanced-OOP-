@@ -1,20 +1,21 @@
 def read_matrix(n):  # Finde PLAYER AND Read, Matrix. !!! Return all - Matrix, player_row, player_col !!!!!
     matrix = []
-    row_index = None
-    col_index = None
+    player_row_index = None
+    player_col_index = None
+
 
     for row in range(n):
         current_row = list(input())
         if "P" in current_row:
-            row_index = row
-            col_index = current_row.index("P")
+            player_row_index = row
+            player_col_index = current_row.index("P")
 
         matrix.append(current_row)
 
 
-    return (matrix, row_index, col_index)
+    return (matrix, player_row_index, player_col_index)
 
-matrix, row_index, col_index = read_matrix(n)
+matrix, player_row_index, player_col_index = read_matrix(n)
 print(*matrix, sep="\n")
 
 -----------------------------------------------------------
