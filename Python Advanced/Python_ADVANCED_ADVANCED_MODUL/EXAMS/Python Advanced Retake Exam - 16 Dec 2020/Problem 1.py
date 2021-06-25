@@ -21,7 +21,7 @@ while True:
             males.pop()
             continue
 
-        if current_female % 25 == 0:  # check if its from -1 index
+        if current_female % 25 == 0:
             females.pop(0)
             females.pop(0)
             continue
@@ -47,9 +47,9 @@ if males:
 
 else:
     print(f"Males left: none")
-    
+
 if females:
-    print(f"Females left: ",end="")
+    print(f"Females left: ", end="")
     print(*females, sep=", ")
 
 else:
