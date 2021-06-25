@@ -73,10 +73,10 @@ def find_the_player(matrix):  # Find the thing we search
 
 def get_next_move(row, col, dir):  # DIRECTIONS FUNKTION
     dir_deltas = {
-        "U": (-1, 0),
-        "D": (+1, 0),
-        "L": (0, -1),
-        "R": (0, +1),
+        "up": (-1, 0),
+        "down": (+1, 0),
+        "left": (0, -1),
+        "right": (0, +1),
     }
     (row_index, column_index) = position
     (row_delta, column_delta) = dir_deltas[dir]
