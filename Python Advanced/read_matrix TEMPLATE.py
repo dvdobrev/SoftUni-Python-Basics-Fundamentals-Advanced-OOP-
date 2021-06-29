@@ -101,6 +101,12 @@ FORMATING
 b = ', '.join([el for el in test])
 a = ', '.join([f"{k}: {v}" for k, v in self.ingredients.items()])
 
+
+a = ["15", "29"]
+b = "".join(', '.join([el for el in a]))
+
+--> 15, 29
+
 --------------------------------------------------------------------
 
 from collections import defaultdict
