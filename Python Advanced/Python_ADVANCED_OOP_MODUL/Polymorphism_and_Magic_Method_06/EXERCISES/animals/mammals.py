@@ -1,5 +1,5 @@
 from project.animals.animal import Mammal
-from project.food import Vegetable, Fruit, Meat
+from Python_ADVANCED_OOP_MODUL.Inheritance_05.EXERCISES.project_shop_05.food import Vegetable, Fruit, Meat
 
 
 class Mouse(Mammal):

@@ -1,5 +1,5 @@
 from project.animals.animal import Bird
-from project.food import Meat, Vegetable
+from Python_ADVANCED_OOP_MODUL.Inheritance_05.EXERCISES.project_shop_05.food import Meat
 
 
 class Owl(Bird):

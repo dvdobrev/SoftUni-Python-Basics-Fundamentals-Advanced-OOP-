@@ -1,5 +1,5 @@
-from project.animals.birds import Owl, Hen
-from project.food import Meat, Vegetable, Fruit
+from project.animals.birds import Hen
+from Python_ADVANCED_OOP_MODUL.Inheritance_05.EXERCISES.project_shop_05.food import Meat, Vegetable, Fruit
 
 # owl = Owl("Pip", 10, 10)
 # print(owl)
