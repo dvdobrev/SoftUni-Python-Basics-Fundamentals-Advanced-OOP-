@@ -1,4 +1,4 @@
-from project.animal import Animal
+from Python_ADVANCED_OOP_MODUL.Encapsulation_04.EXERCISES.project_wild_cat_zoo_01.animal import Animal
 
 
 class Dog(Animal):
