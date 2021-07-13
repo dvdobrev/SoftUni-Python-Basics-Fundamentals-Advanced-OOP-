@@ -9,8 +9,6 @@ class Vehicle(ABC):
     @abstractmethod
     def drive(self, distance):
         pass
-        # if self.fuel_consumption * distance <= self.fuel_quantity:
-        #     self.fuel_quantity -= self.fuel_consumption * distance
 
     @abstractmethod
     def refuel(self, fuel):
