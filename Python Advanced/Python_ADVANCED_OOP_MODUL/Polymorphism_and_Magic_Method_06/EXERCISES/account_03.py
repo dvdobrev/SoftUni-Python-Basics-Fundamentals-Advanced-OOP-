@@ -13,14 +13,12 @@ class Account:
     def balance(self):
         return self.amount + sum(self._transactions)
 
-    def validate_transaction(self, account, amount_to_add):
-        if self.amount >= amount_to_add:
-            account._transactions.append(amount_to_add)
-            account.amount -= amount_to_add
-            return f"New balance: {self.amount}"
-
-        else:
+    @staticmethod
+    def validate_transaction(account, amount_to_add):
+        if account.amount + amount_to_add < 0:
             raise ValueError("sorry cannot go in debt!")
+        account.add_transaction(amount_to_add)
+        return f"New balance: {account.balance}"
 
     def __str__(self):
         return f"Account of {self.owner} with starting amount: {self.amount}"
