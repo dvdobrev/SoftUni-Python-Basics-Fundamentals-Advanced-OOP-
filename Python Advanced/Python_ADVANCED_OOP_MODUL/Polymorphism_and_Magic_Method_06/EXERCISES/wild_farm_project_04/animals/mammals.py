@@ -1,5 +1,5 @@
 from project.animals.animal import Mammal
-from Python_ADVANCED_OOP_MODUL.Inheritance_05.EXERCISES.project_shop_05.food import Vegetable, Fruit, Meat
+from project.food import Vegetable, Fruit, Meat
 
 
 class Mouse(Mammal):
@@ -16,7 +16,7 @@ class Mouse(Mammal):
         self.food_eaten += food.quantity
 
     def __repr__(self):
-        return f"{self.__class__.__name__} [{self.name}, {self.living_region}, {self.weight}, {self.food_eaten}]"
+        return f"{self.__class__.__name__} [{self.name}, {self.weight}, {self.living_region}, {self.food_eaten}]"
 
 
 class Dog(Mammal):
@@ -33,7 +33,7 @@ class Dog(Mammal):
         self.food_eaten += food.quantity
 
     def __repr__(self):
-        return f"{self.__class__.__name__} [{self.name}, {self.living_region}, {self.weight}, {self.food_eaten}]"
+        return f"{self.__class__.__name__} [{self.name}, {self.weight}, {self.living_region}, {self.food_eaten}]"
 
 
 class Cat(Mammal):
@@ -50,7 +50,7 @@ class Cat(Mammal):
         self.food_eaten += food.quantity
 
     def __repr__(self):
-        return f"{self.__class__.__name__} [{self.name}, {self.living_region}, {self.weight}, {self.food_eaten}]"
+        return f"{self.__class__.__name__} [{self.name}, {self.weight}, {self.living_region}, {self.food_eaten}]"
 
 
 class Tiger(Mammal):
@@ -67,4 +67,4 @@ class Tiger(Mammal):
         self.food_eaten += food.quantity
 
     def __repr__(self):
-        return f"{self.__class__.__name__} [{self.name}, {self.living_region}, {self.weight}, {self.food_eaten}]"
+        return f"{self.__class__.__name__} [{self.name}, {self.weight}, {self.living_region}, {self.food_eaten}]"

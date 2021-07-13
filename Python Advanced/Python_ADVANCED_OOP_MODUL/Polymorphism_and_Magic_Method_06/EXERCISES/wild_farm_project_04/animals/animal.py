@@ -27,6 +27,3 @@ class Mammal(Animal):
 
     def make_sound(self):
         pass
-
-
-

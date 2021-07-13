@@ -1,5 +1,5 @@
 from project.animals.animal import Bird
-from Python_ADVANCED_OOP_MODUL.Inheritance_05.EXERCISES.project_shop_05.food import Meat
+from project.food import Meat
 
 
 class Owl(Bird):
@@ -30,7 +30,5 @@ class Hen(Bird):
         self.weight += 0.35 * food.quantity
         self.food_eaten += food.quantity
 
-
     def __repr__(self):
         return f"{self.__class__.__name__} [{self.name}, {self.wing_size}, {self.weight}, {self.food_eaten}]"
-
