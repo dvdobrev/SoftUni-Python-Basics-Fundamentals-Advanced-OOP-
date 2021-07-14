@@ -7,7 +7,6 @@ class Person:
         self.surname = surname
 
     def __add__(self, other):
-        #if isinstance(other, self.__class__):
         return Person(name=self.name, surname=other.surname)
 
     @property
