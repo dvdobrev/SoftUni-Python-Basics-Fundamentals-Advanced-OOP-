@@ -23,7 +23,7 @@ class Group:
         self.people = people
 
     def __add__(self, other):
-        return Group(name=self.name + other.name, people=self.people + other.people)
+        return Group(name=self.name + ' ' + other.name, people=self.people + other.people)
 
     def __len__(self):
         return len(self.people)
@@ -49,7 +49,7 @@ third_group = first_group + second_group
 print(len(first_group))
 print(second_group)
 print(third_group[0])
-#print(third_group)
+print(third_group)
 
 for person in third_group:
     print(person)
